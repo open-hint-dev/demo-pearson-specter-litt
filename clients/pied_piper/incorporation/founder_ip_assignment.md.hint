@@ -1,0 +1,63 @@
+Specification for `founder_ip_assignment.md` — the technology assignment agreement under which the Founder contributes the middle-out algorithm to the Company at formation, in exchange for the Founder Shares.
+
+# read Drafted Certificate {#pp_ipa_read_coi}
+
+Open and read `clients/pied_piper/incorporation/certificate_of_incorporation.md` before drafting. The agreement must mirror the certificate exactly — corporate name, authorized stock, and the Certificate's defined designation — never restate them from memory. If the certificate has not been drafted yet, stop and report that the formation sequence {#pp_inc_sequence} is broken.
+
+# recital Contribution {#pp_ipa_recitals}
+
+The Founder created the Assigned Technology before the Company's formation; the parties intend it to become the Company's property at the Effective Time, as the Company's founding asset, in exchange for the Founder Shares.
+
+# definition Assigned Technology {#pp_ipa_def_tech}
+
+"**Assigned Technology**" means the middle-out compression algorithm and all related inventions, source code, designs, documentation, and know-how created by the Founder before the Effective Time, as listed in Schedule A, together with all intellectual property rights in them.
+
+# clause Assignment {#pp_ipa_assignment}
+
+## obligation Present Assignment
+
+The Founder assigns to the Company all right, title, and interest in the Assigned Technology, effective as of the Effective Time.
+
+### condition Effectiveness
+
+The assignment is conditioned on (a) the occurrence of the Effective Time and (b) the issuance of the Founder Shares to the Founder. If either fails, title remains with the Founder.
+
+## obligation Further Assurances
+
+The Founder shall execute documents and give testimony reasonably requested by the Company, during and after his service, to perfect, register, or defend the assigned rights, at the Company's expense.
+
+# payment Consideration {#pp_ipa_consideration}
+
+The sole consideration for the assignment is the issuance of the Founder Shares. No cash consideration, no royalty, no earn-out — and the agreement must state that the parties intend the exchange to qualify as a tax-free contribution, without rendering tax advice.
+
+# representation Clean Chain of Title {#pp_ipa_rep_title}
+
+The Founder represents that: (a) he is the sole creator of the Assigned Technology; (b) to the Founder's knowledge, the Assigned Technology was created without use of any prior employer's equipment, facilities, funding, or confidential information; and (c) except as disclosed in Schedule B, no third party has any right, claim, or interest in the Assigned Technology. The knowledge qualifier in (b) is exactly "to the Founder's knowledge" — neither dropped nor broadened.
+
+# risk Prior Employer Exposure {#pp_ipa_hooli_risk}
+
+The Founder previously worked at Hooli while parts of the algorithm were conceived — the classic invention-assignment claim scenario. The agreement mitigates with the title representation and the Schedule B disclosure mechanism; the report must say so explicitly. The agreement itself must not argue the merits, characterize Hooli's potential claims, or mention Hooli by name outside Schedule B.
+
+# never No Restraints, No Guarantees {#pp_ipa_never}
+
+This agreement contains no non-compete and no non-solicit — the client red line {#pp_redline_norestraints} admits no exception, and California law would void them anyway. It also contains no representation that no claim will ever be brought against the Assigned Technology: warrant the past, never the future.
+
+# exhibit Schedule A — Assigned Technology {#pp_ipa_schedule_a}
+
+The itemized list of the Assigned Technology, supplied by the Founder. A gap until supplied, per the firm gap protocol.
+
+# exhibit Schedule B — Third-Party Disclosures {#pp_ipa_schedule_b}
+
+The Founder's disclosures of any third-party rights or prior-employer facts. If the Founder discloses nothing, the schedule states "None" — it is never omitted.
+
+# signature {#pp_ipa_signature}
+
+The Company signs by its Chief Executive Officer, expressly on behalf of the corporation as of the Effective Time; the Founder signs personally. The Founder's two capacities — officer of the Company and assigning individual — must be visibly distinct in the execution block.
+
+# checklist {#pp_ipa_checklist}
+
+- The corporate name and stock details match the drafted certificate exactly — verified against the document read, not assumed.
+- The assignment is conditioned on the Effective Time and the Founder Shares issuance, per the formation sequence.
+- The knowledge qualifier in the title representation is intact.
+- No restraint of trade and no future-claim guarantee appears anywhere.
+- Both schedules are referenced in the operative text; Schedule A's gap is reported.

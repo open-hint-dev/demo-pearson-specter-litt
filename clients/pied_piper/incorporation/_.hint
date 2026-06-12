@@ -1,0 +1,19 @@
+Formation workspace for Pied Piper, Inc. — the founding document set. The defined terms shared by every formation document are stated once, and included below: change them there and every formation spec compiles with the new text.
+
+@include "./shared/formation_definitions.hint"
+
+# fact Capitalization at Formation {#pp_inc_cap}
+
+- Authorized: ten million (10,000,000) shares of common stock, par value $0.0001 per share. No preferred stock is authorized at formation.
+- Issued at formation: the Founder Shares, to the Founder, and no other shares.
+
+# standard Formation Sequence {#pp_inc_sequence}
+
+The founding set is drafted and takes effect in this order, and each document must respect it:
+
+1. The Certificate — drafted first, filed first; nothing is effective before the Effective Time.
+2. The founder technology assignment — executed at formation, effective as of the Effective Time, conditioned on the issuance of the Founder Shares.
+
+# never Premature Corporate Existence {#pp_inc_never}
+
+No formation document may state or imply that the Company exists, owns property, or has issued shares before the Effective Time, or that the Founder Shares carry rights other than common stock rights under the Certificate.

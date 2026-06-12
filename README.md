@@ -15,18 +15,19 @@ Welcome to the automated document repository of **Pearson Specter Litt LLP**, th
   - [The Problem: The AI "Vibe Drafting" Trap](#the-problem-the-ai-vibe-drafting-trap)
   - [The Solution: Enter HINT](#the-solution-enter-hint)
     - [Review the Spec, Not the Output](#review-the-spec-not-the-output)
-    - [Two Clients Who Must Never Meet](#two-clients-who-must-never-meet)
+    - [Three Clients Who Must Never Meet](#three-clients-who-must-never-meet)
     - [Law as Code](#law-as-code)
   - [Repository Architecture](#repository-architecture)
   - [How a Compilation Works](#how-a-compilation-works)
   - [Demo Walkthrough](#demo-walkthrough)
     - [Step 0 — Setup](#step-0--setup)
-    - [Scenario 1 — One Firm, Two Clients, Opposite Red Lines](#scenario-1--one-firm-two-clients-opposite-red-lines)
+    - [Scenario 1 — One Firm, Three Clients, Opposite Red Lines](#scenario-1--one-firm-three-clients-opposite-red-lines)
     - [Scenario 2 — Try to Talk the AI Out of Compliance](#scenario-2--try-to-talk-the-ai-out-of-compliance)
     - [Scenario 3 — Numbers That Cannot Be Invented](#scenario-3--numbers-that-cannot-be-invented)
-    - [Scenario 4 — Audit Mode: Catch the Poisoned Clause](#scenario-4--audit-mode-catch-the-poisoned-clause)
-    - [Scenario 5 — Change One Policy, Update Every Client](#scenario-5--change-one-policy-update-every-client)
-    - [Scenario 6 — Look Inside the Compiler](#scenario-6--look-inside-the-compiler)
+    - [Scenario 4 — The Formation Pack: Stated Once, Read Always](#scenario-4--the-formation-pack-stated-once-read-always)
+    - [Scenario 5 — Audit Mode: Catch the Poisoned Clause](#scenario-5--audit-mode-catch-the-poisoned-clause)
+    - [Scenario 6 — Change One Policy, Update Every Client](#scenario-6--change-one-policy-update-every-client)
+    - [Scenario 7 — Look Inside the Compiler](#scenario-7--look-inside-the-compiler)
   - [The Closing Argument](#the-closing-argument)
 
 ---
@@ -58,12 +59,13 @@ Without HINT, a lawyer reads every generated line in fear of missing an invented
 
 The draft still gets a professional read before it leaves the building — but now you are checking work against a contract, not proofreading creative writing.
 
-### Two Clients Who Must Never Meet
+### Three Clients Who Must Never Meet
 
 Ordinary document-automation tools work with loose `.docx` templates and chat prompts, where the AI happily blends contexts. HINT builds a **compliance context graph** instead:
 
 - Specifications are **sandboxed per client** and inherit rules top-down through the folder chain.
-- The firm's own policies ([policies/](policies/)) apply everywhere; each client's requirements (Acme Corp, GigaBio) live only in their own folder.
+- The firm's own policies ([policies/](policies/)) apply everywhere; each client's requirements (Acme Corp, GigaBio, Pied Piper) live only in their own folder.
+- Shared truth is stated **once** and `@include`-d where needed — Pied Piper's formation definitions are physically the same text in every compiled prompt — and cross-document dependencies are explicit: a spec can order the agent to `read` a sister document before drafting, instead of letting it guess.
 - The AI is _physically unable_ to confuse Delaware law with English law, because the compiler isolates and assembles the context **before** the neural network ever sees it.
 
 ### Law as Code
@@ -76,7 +78,9 @@ Ordinary document-automation tools work with loose `.docx` templates and chat pr
 
 ## Repository Architecture
 
-This monorepo manages legal guardrails for **two completely different clients** with conflicting business constraints. Without HINT, an AI agent would easily mix up their rules. Here, they are strictly sandboxed and versioned via **Git**.
+This monorepo manages legal guardrails for **three completely different clients** with conflicting business constraints. Without HINT, an AI agent would easily mix up their rules. Here, they are strictly sandboxed and versioned via **Git**.
+
+One of the clients should look familiar: **Pied Piper**, the compression startup whose engineering monorepo is the sibling HINT demo (`demo-pied-piper`, built on the software-engineer hintbook). Its code ships under HINT contracts; here, the same company gets incorporated under them.
 
 ```text
 demo-pearson-specter-litt/
@@ -97,13 +101,21 @@ demo-pearson-specter-litt/
     │       └── stark_industries/
     │           ├── 2025_12_21_version.md         # The latest termsheet version received from the fund
     │           └── 2025_12_21_highlights.md.hint # Spec for the termsheet highlights memo
-    └── gigabio_llc/
-        ├── _.hint                                # UK Biotech rules (Exclusive licenses, HARD 3-year Non-Compete)
-        ├── nda/
-        │   └── research_nda.md.hint              # Spec for a chemical researcher NDA
-        └── contracts/
-            └── anabolic_rda/
-                └── research.md.hint              # Spec for a chemical researcher contract
+    ├── gigabio_llc/
+    │   ├── _.hint                                # UK Biotech rules (Exclusive licenses, HARD 3-year Non-Compete)
+    │   ├── nda/
+    │   │   └── research_nda.md.hint              # Spec for a chemical researcher NDA
+    │   └── contracts/
+    │       └── anabolic_rda/
+    │           └── research.md.hint              # Spec for a chemical researcher contract
+    └── pied_piper/
+        ├── _.hint                                # CA startup rules (founder control, restraints of trade VOID)
+        └── incorporation/
+            ├── _.hint                            # Formation baselines + @include of the shared definitions
+            ├── shared/
+            │   └── formation_definitions.hint    # Defined terms stated ONCE, @include-d by every formation spec
+            ├── certificate_of_incorporation.md.hint  # Spec for the Delaware charter
+            └── founder_ip_assignment.md.hint     # Spec for the founder IP assignment (# read the charter first)
 ```
 
 ## How a Compilation Works
@@ -140,7 +152,7 @@ You need an AI agent. The examples use [Claude Code](https://claude.com/claude-c
 hint --dry-run 'policies/*.hint' 'clients/**/*.hint'   # validate every spec resolves (CI-friendly)
 ```
 
-### Scenario 1 — One Firm, Two Clients, Opposite Red Lines
+### Scenario 1 — One Firm, Three Clients, Opposite Red Lines
 
 _Proves: multi-tenant guardrails. Same command, same model — opposite documents, zero leakage._
 
@@ -163,6 +175,8 @@ Now compare the two drafts:
 | Length & tone | ≤ 4 pages, plain-language summaries                       | Precision over brevity                                     |
 
 The constraints came from each client's sandbox ([clients/acme*corp/*.hint](clients/acme_corp/_.hint) vs [clients/gigabio*llc/*.hint](clients/gigabio_llc/_.hint)) — the lawyer never repeated them in a prompt, and neither client's rules touched the other's document.
+
+And the third client completes the picture: Pied Piper's founding documents ([Scenario 4](#scenario-4--the-formation-pack-stated-once-read-always)) may contain **no restraint of trade at all** — void under California law, no fallback. One firm, three irreconcilable positions on the same clause — _twelve months max_, _exactly three years_, _none ever_ — and the compiler keeps each one inside its sandbox.
 
 Bonus: GigaBio's hard 3-year non-compete is in tension with English restraint-of-trade doctrine. Watch the agent's report — the spec orders it to **flag the conflict and narrow scope, never the duration**. Flagged, not fudged.
 
@@ -195,7 +209,30 @@ Check the result against the source:
 - The option-pool shuffle (headline valuation vs. effective valuation) is _derived_ from the term sheet's own figures, with the calculation shown.
 - Anything the term sheet leaves silent appears as a reported **gap** — never as a plausible-sounding invention.
 
-### Scenario 4 — Audit Mode: Catch the Poisoned Clause
+### Scenario 4 — The Formation Pack: Stated Once, Read Always
+
+_Proves: reusability by construction — shared truth is `@include`-d, cross-document facts are `read`, never retyped._
+
+The firm incorporates **Pied Piper** — yes, that Pied Piper: the company whose engineering monorepo is the sibling HINT demo. The formation pack is two documents that must never disagree — the Delaware charter and the founder IP assignment — and the specs make disagreement structurally impossible:
+
+- The defined terms every formation document needs ("Certificate", "Effective Time", "Founder Shares") live **once**, in [shared/formation_definitions.hint](clients/pied_piper/incorporation/shared/formation_definitions.hint), and are `@include`-d by the folder spec [incorporation/\_.hint](clients/pied_piper/incorporation/_.hint). Every formation prompt compiles with the physically identical text.
+- The IP assignment spec opens with a `read` block: before drafting, the agent must open the drafted certificate and mirror its corporate name and stock figures — and must **stop and report** if the certificate does not exist yet, because the drafting order is itself a declared standard.
+
+Draft them in sequence and watch the dependency work:
+
+```bash
+claude -p "Draft clients/pied_piper/incorporation/certificate_of_incorporation.md following its compiled spec"
+claude -p "Draft clients/pied_piper/incorporation/founder_ip_assignment.md following its compiled spec"
+```
+
+Then try to break it both ways:
+
+1. Delete the drafted certificate and ask for the assignment again — the agent refuses and reports the broken formation sequence instead of drafting the charter's contents from memory.
+2. Change one shared definition — say, the Founder Shares count in `formation_definitions.hint` — and re-run `--mode fix` for both documents. One edit, every formation document conforms; `git diff` shows the single source of truth doing its job.
+
+Also worth watching: the founder once worked at Hooli, so the IP assignment spec carries a declared `risk` — the agent must say exactly which representation and which disclosure schedule mitigate the prior-employer exposure, and must keep Hooli's name out of the operative text.
+
+### Scenario 5 — Audit Mode: Catch the Poisoned Clause
 
 _Proves: the same specs that draft documents also police them._
 
@@ -207,7 +244,7 @@ hint --mode review policies/compliance.hint clients/gigabio_llc/nda/research_nda
 
 The report walks the specification block by block, quotes the document's exact deviant language, names the violated block (`{#gigabio_redline_noncompete}`), proposes the minimal correcting language, and closes with an explicit **does-not-conform** verdict. Findings, never silent fixes — and `--mode fix` applies the smallest conforming revision when you want the repair done.
 
-### Scenario 5 — Change One Policy, Update Every Client
+### Scenario 6 — Change One Policy, Update Every Client
 
 _Proves: cascading updates + Git-native auditability._
 
@@ -235,7 +272,7 @@ A new firm regulation: every outgoing draft must carry a work-product legend. Im
 
 One file changed the rule; the compiler carried it into every affected document; Git shows precisely what moved. Compare that to re-checking a folder of `.docx` templates by hand.
 
-### Scenario 6 — Look Inside the Compiler
+### Scenario 7 — Look Inside the Compiler
 
 _Proves: zero magic, zero hidden prompts — and zero leakage of internal notes._
 
@@ -259,6 +296,6 @@ The spec's `notes` block (an open question for the client) was stripped at compi
 >
 > **HINT puts legal drafting on the reliable rails of software engineering.** You keep your clients' policies in Git, as code. Right in Markdown you draw the hard borders: who the parties are, where you litigate, which clauses are mandatory and which are strictly banned. The compiler turns that into a reinforced-concrete contract for the AI.
 >
-> In this repo, Pearson Specter Litt LLP fixes the rules of the startup **Acme Corp** and the biotech **GigaBio** in separate folders. The AI generates a precisely correct document for each, verifies compliance automatically — and never improvises, because the compiler blocks every attempt to cross the lines.
+> In this repo, Pearson Specter Litt LLP fixes the rules of the startup **Acme Corp**, the biotech **GigaBio**, and the freshly incorporated **Pied Piper** in separate folders. The AI generates a precisely correct document for each, verifies compliance automatically — and never improvises, because the compiler blocks every attempt to cross the lines.
 
 The verdict is yours — but don't deliberate on prose, **run the evidence**. The same `hint` command with different spec files makes the AI switch style and jurisdiction on the spot and cut forbidden wording before it lands. What wins a lawyer over isn't text generation. It's **safety and predictability**.

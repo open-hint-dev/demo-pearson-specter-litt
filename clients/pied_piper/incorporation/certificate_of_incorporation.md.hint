@@ -1,0 +1,48 @@
+Specification for `certificate_of_incorporation.md` — the certificate of incorporation of Pied Piper, Inc., drafted ready for filing with the Delaware Secretary of State.
+
+# precedent Plain Delaware Charter {#pp_coi_precedent}
+
+A minimal filing-ready Delaware certificate: numbered articles styled FIRST, SECOND, THIRD…; no recitals, no table of contents, no execution ceremony beyond the incorporator's signature.
+
+# source DGCL Contents Requirements {#pp_coi_source}
+
+Section 102 of the DGCL governs what the certificate must and may contain. Draft to satisfy it; include nothing a Delaware filing clerk would not expect.
+
+# clause Name {#pp_coi_name}
+
+The name of the corporation is Pied Piper, Inc.
+
+# clause Registered Office and Agent {#pp_coi_agent}
+
+The Delaware registered office and registered agent have not yet been engaged. Report this as a gap per the firm gap protocol — never an address or agent name to invent.
+
+# clause Purpose {#pp_coi_purpose}
+
+Any lawful act or activity for which corporations may be organized under the DGCL — exactly that broad. No narrower purpose clause: the Company's business will change faster than its charter.
+
+# clause Authorized Stock {#pp_coi_stock}
+
+The capitalization declared in the formation facts {#pp_inc_cap}, exactly — common stock only, the declared share count and par value, no preferred stock and no blank-check authorization.
+
+# clause Director Exculpation {#pp_coi_exculpation}
+
+Personal liability of directors to the Company and its stockholders for breach of fiduciary duty is eliminated to the fullest extent permitted by Section 102(b)(7) of the DGCL.
+
+## exception Statutory Carve-Outs
+
+The exculpation extends no further than the statute permits — state the statutory carve-outs as the statute states them, and add none beyond them.
+
+# clause Indemnification {#pp_coi_indemnification}
+
+The Company indemnifies its directors and officers to the fullest extent permitted by Section 145 of the DGCL, with advancement of expenses.
+
+# clause Incorporator {#pp_coi_incorporator}
+
+The certificate is executed by an incorporator of Pearson Specter Litt LLP; the incorporator's name and mailing address are completed at filing, and the document must say so expressly.
+
+# checklist {#pp_coi_checklist}
+
+- Every article required by Section 102(a) of the DGCL is present; nothing speculative is added.
+- Share figures match the declared capitalization exactly; no preferred stock appears anywhere.
+- The registered agent gap is marked per the firm gap protocol and listed in the report.
+- Nothing in the certificate undermines the Founder Control red line — no supermajority requirements, no removal rights, no classes of stock the facts do not declare.
