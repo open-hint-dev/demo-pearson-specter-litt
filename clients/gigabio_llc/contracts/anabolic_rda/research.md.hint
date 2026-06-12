@@ -1,0 +1,103 @@
+Specification for `research.md` — the research and development agreement engaging an independent contractor researcher on GigaBio's "Anabolic" programme.
+
+# matter Anabolic Programme Engagement {#anabolic_matter}
+
+GigaBio engages a senior chemical researcher as an independent contractor to run medicinal-chemistry work packages on the Anabolic programme, GigaBio's lead muscle-wasting therapeutics project. The Researcher works in GigaBio's Cambridge laboratory using GigaBio materials and equipment.
+
+# party Researcher {#anabolic_researcher}
+
+The individual researcher identified in the execution block of the agreement (the "**Researcher**"), engaged as an independent contractor and not as an employee, worker, or agent of GigaBio.
+
+# definition Project IP {#anabolic_def_project_ip}
+
+"**Project IP**" means all intellectual property created by the Researcher in the course of, or arising from, the Services, including compounds, synthesis routes, data, inventions, know-how, and works of authorship, whether or not patentable.
+
+# definition Background IP {#anabolic_def_background_ip}
+
+"**Background IP**" means intellectual property owned or controlled by a party before the Effective Date or created outside the Services, as listed by the Researcher in Schedule 2 before execution. Background IP not listed in Schedule 2 is treated as not asserted against GigaBio.
+
+# clause Services and Deliverables {#anabolic_services}
+
+## obligation Performance
+
+The Researcher shall perform the work packages described in Schedule 1 with the skill and care of a senior professional in medicinal chemistry, and shall deliver the deliverables there described by the dates there stated.
+
+## obligation Records
+
+The Researcher shall keep complete, contemporaneous laboratory records in GigaBio's electronic lab notebook and shall not keep copies elsewhere.
+
+# clause Intellectual Property {#anabolic_ip}
+
+## obligation Assignment
+
+The Researcher assigns to GigaBio, effective on creation, all right, title, and interest in all Project IP — implementing the client red line {#gigabio_redline_exclusive}, including its sole declared fallback for rights that cannot be assigned.
+
+## obligation Moral Rights
+
+The Researcher waives irrevocably and unconditionally all moral rights in Project IP to the fullest extent permitted by the law of England and Wales.
+
+## right Background IP Licence
+
+GigaBio receives a non-exclusive, perpetual, irrevocable, royalty-free licence to the Researcher's Background IP solely as embedded in the deliverables and solely to exploit Project IP. This is the single place a non-exclusive right is acceptable: it concerns the Researcher's pre-existing IP, not engagement IP.
+
+# payment Fees {#anabolic_payment}
+
+- Monthly fee: fifteen thousand pounds sterling (GBP 15,000), invoiced monthly in arrears.
+- Milestone payment: forty thousand pounds sterling (GBP 40,000) on GigaBio's written acceptance of the final work-package deliverable in Schedule 1.
+- Payment within thirty (30) calendar days of a valid invoice. All amounts exclusive of VAT.
+
+## source
+
+Interest on late payment per the Late Payment of Commercial Debts (Interest) Act 1998 — statutory rate, stated in the agreement, not replaced with a contractual rate.
+
+# clause Non-Competition {#anabolic_noncompete}
+
+## prohibition Restraint
+
+The Researcher shall not, directly or indirectly, perform research, development, or commercialization services within the Restricted Field for any person other than GigaBio during the engagement and for three (3) years after it ends — per the client red line {#gigabio_redline_noncompete}.
+
+### condition Territory
+
+The restraint applies in the United Kingdom and the European Economic Area.
+
+### source
+
+English restraint-of-trade doctrine, as for the research NDA: flag enforceability tension in the report; narrow the Restricted Field or territory only under the declared fallback — never the duration.
+
+# termination {#anabolic_termination}
+
+- GigaBio may terminate for convenience on thirty (30) calendar days' written notice; the Researcher has no convenience termination right during a work package.
+- Either party may terminate immediately for material breach unremedied fourteen (14) calendar days after written notice describing the breach.
+- On any termination the Researcher shall immediately deliver all Project IP, materials, and records to GigaBio. The IP, confidentiality, and non-competition provisions survive.
+
+# risk Employment Status {#anabolic_status_risk}
+
+Misclassification risk: the Researcher works on-site with GigaBio equipment. The agreement must state the independent-contractor relationship, the absence of mutuality of obligation, and the Researcher's responsibility for their own tax and National Insurance — and the report must say which provision carries this mitigation.
+
+# notice {#anabolic_notices}
+
+Notices in writing, in English, by hand or by email to the addresses stated in the execution block, deemed received: by hand, on delivery; by email, at the time of sending if before 17:00 on a business day in Cambridge, otherwise 09:00 the next business day.
+
+# dispute {#anabolic_dispute}
+
+Arbitration under the LCIA Rules, seat London, one arbitrator, language English. Either party may seek interim injunctive relief from the courts of England and Wales without breaching this clause.
+
+# exhibit Schedule 1 — Work Packages {#anabolic_schedule_1}
+
+The work packages, deliverables, and delivery dates. Content to be supplied by GigaBio's research director — a gap until supplied, per the firm gap protocol.
+
+# exhibit Schedule 2 — Background IP {#anabolic_schedule_2}
+
+The Researcher's declared Background IP list, completed before execution; the agreement must state the consequence of non-listing declared in the Background IP definition.
+
+# signature {#anabolic_signature}
+
+GigaBio acting by a director; the Researcher signing personally. Each signature dated; the latest date is the Effective Date, and the agreement must define it so.
+
+# checklist {#anabolic_checklist}
+
+- All Project IP is assigned; the only non-exclusive right in the document is the Background IP licence.
+- The non-compete is exactly three (3) years and its enforceability tension is flagged in the report.
+- All figures match the payment block exactly; statutory late-payment interest is cited, not invented.
+- The report states which provision mitigates the employment-status risk.
+- Both schedules are referenced in the operative text under their declared designations.

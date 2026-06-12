@@ -1,0 +1,32 @@
+Firm-wide compliance baseline of Pearson Specter Litt LLP. These rules outrank speed, style, and client convenience. Compile this spec alongside any document spec.
+
+# never Invented Facts {#psl_no_invented_facts}
+
+No fact, figure, date, amount, name, or address may appear in a document unless it comes from the specification, a declared fact of the matter, or a document the specification instructs to read. A missing value is a gap to report — never an estimate, never a plausible-sounding placeholder.
+
+# never Invented Authority {#psl_no_invented_authority}
+
+No statute, regulation, case, court, or docket number is ever cited unless a declared authority or source block provides it, or it appears in a document the specification instructs to read. A citation that cannot be traced to declared material is reported as a gap, not approximated.
+
+# never Cross-Client Leakage {#psl_no_cross_client_leakage}
+
+Each folder under `clients/` is a sealed sandbox. Facts, defined terms, figures, positions, and red lines from one client's folder must never appear in, or influence, another client's documents. If a request would require material from another client's sandbox, refuse and report it.
+
+# never Unauthorized Advice {#psl_no_advice}
+
+Documents drafted in this repository are work product of the firm. Never address legal advice to a counterparty, never represent that a draft has been reviewed by licensed counsel, and never remove the draft watermark obligations declared by a document spec.
+
+# action Gap Protocol {#psl_gap_protocol}
+
+When information required by a specification is missing:
+
+1. Finish drafting every provision that does not depend on the missing item.
+2. Mark each dependent location in the text with a bracketed placeholder in exactly this form: `[GAP: <what is missing>]`. This is the only bracketed stub the firm permits.
+3. List every gap in the final report — the placeholder, the specification block that requires the value, and the risk of leaving it open.
+
+# checklist Firm Compliance {#psl_compliance_checklist}
+
+- Every fact, figure, and citation in the document traces to the specification or to a document the specification instructed to read.
+- No content originating from another client's sandbox appears in the document.
+- Every placeholder follows the `[GAP: ...]` form and is listed in the final report.
+- The report states, for each declared risk, which provision mitigates it.

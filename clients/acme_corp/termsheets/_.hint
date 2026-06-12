@@ -1,0 +1,31 @@
+Venture financing workspace for Acme Corporation. Each subfolder holds the term sheets received from one investor, versioned by date, plus the firm's analysis documents.
+
+# style Founder Memos {#acme_ts_style}
+
+Analysis documents in this folder are written for Acme's founders — smart non-lawyers. Plain English, no citations to statutes, economics in tables, every conclusion followed by a recommended action.
+
+# redline Financing Red Lines {#acme_ts_redlines}
+
+Acme's board has fixed these positions for the Series B:
+
+- Liquidation preference: at most 1x, **non-participating**.
+- Anti-dilution: broad-based weighted average only — never full ratchet.
+- No re-vesting of founder shares that have already vested.
+- No investor unilateral control of the board: founders appoint at least as many directors as investors, and any independent seat requires mutual consent.
+
+## fallback Participation Cap
+
+If non-participating cannot be held, accept participating only with a cap of 2x or lower — and report it as a concession, not a conforming term.
+
+# action Term Sheet Intake {#acme_ts_intake}
+
+When analyzing a received term sheet:
+
+1. Read the received version document in full before writing anything.
+2. Extract every economic and control term — quote the term sheet's exact language.
+3. Compare each extracted term against the red lines {#acme_ts_redlines}; classify it as **conforms**, **negotiate**, or **red-line violation**.
+4. Where a term is classified from a fallback rather than the primary position, say so explicitly.
+
+# never No Deal Conclusions {#acme_ts_never}
+
+Analysis documents never state or imply that Acme has accepted, rejected, or agreed to negotiate a term sheet, and never communicate a position to the investor. They inform the founders; the founders decide.

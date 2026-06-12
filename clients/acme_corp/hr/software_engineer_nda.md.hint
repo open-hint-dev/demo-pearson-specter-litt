@@ -1,0 +1,70 @@
+Specification for `software_engineer_nda.md` — the standard confidentiality and invention assignment agreement every Acme software engineer signs on the first day of employment.
+
+# recital Purpose {#acme_nda_recitals}
+
+The Employee is employed by Acme in a software engineering role with access to Acme's source code, systems, and product plans; the parties wish to record how that information is protected and how rights in the Employee's work are allocated.
+
+# definition Confidential Information {#acme_nda_def_ci}
+
+"**Confidential Information**" means all non-public information disclosed by or on behalf of Acme to the Employee, in any form, including source code, system architecture, security practices, product roadmaps, customer and prospect lists, pricing, and personnel and compensation data — whether or not marked confidential.
+
+## exception Standard Exclusions
+
+Information that: (a) is or becomes public other than through the Employee's breach; (b) was lawfully known to the Employee before disclosure, as shown by written records; (c) is independently developed by the Employee without use of Confidential Information; or (d) must be disclosed by law or court order, provided the Employee gives Acme prompt written notice where lawful and discloses only what is required.
+
+# clause Confidentiality {#acme_nda_confidentiality}
+
+## obligation Non-Disclosure and Limited Use
+
+The Employee shall not disclose Confidential Information to any third party and shall use Confidential Information solely to perform the Employee's duties for Acme.
+
+### breach
+
+Any disclosure or use of Confidential Information outside the declared exceptions.
+
+#### remedy
+
+Acme is entitled to injunctive relief without proof of damages and without posting a bond, in addition to any other remedy available at law.
+
+## deadline Confidentiality Term {#acme_nda_term}
+
+Obligations under this clause survive for five (5) years after the end of employment; for Confidential Information constituting a trade secret, for as long as it remains a trade secret.
+
+# clause Invention Assignment {#acme_nda_inventions}
+
+## obligation Present Assignment
+
+The Employee assigns to Acme, effective on creation, all right, title, and interest in inventions, works of authorship, and developments made during employment that relate to Acme's business or result from work performed for Acme, and shall promptly disclose them to Acme.
+
+### exception Own-Time Inventions
+
+The carve-out required by the HR red line {#acme_hr_ip_carveout} — stated in the document in full, not by reference.
+
+## obligation Further Assurances
+
+The Employee shall execute documents reasonably requested by Acme, during and after employment, to perfect the assigned rights, at Acme's expense.
+
+# clause Return of Materials {#acme_nda_return}
+
+## obligation
+
+Within five (5) business days after the end of employment, the Employee shall return or, at Acme's direction, permanently delete all Confidential Information and Acme property, and shall confirm completion in writing.
+
+# never No Competition Restraints {#acme_nda_no_noncompete}
+
+This document contains no non-compete, no customer non-solicit, and no co-worker non-solicit of any kind. Acme addresses competition concerns, if ever, in separate consideration-backed agreements — never in the day-one NDA.
+
+# signature {#acme_nda_signature}
+
+Acme signs by an authorized officer; the Employee signs personally. The execution block records the Employee's name, role, and start date — the fields completed at signature per the HR baseline.
+
+# checklist {#acme_nda_checklist}
+
+- The document fits the HR readability standard: four pages maximum, italic plain-language summary opening each section.
+- The own-time invention carve-out appears verbatim in the operative text.
+- No restraint of competition appears anywhere in the document.
+- The at-will nature of employment is not contradicted or qualified.
+
+# notes
+
+Open question for the client (never compiled into the prompt): does Acme want a moonlighting disclosure duty, or is that too hostile for candidate experience? Parked pending the next HR review.

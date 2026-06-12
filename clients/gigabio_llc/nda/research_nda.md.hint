@@ -1,0 +1,68 @@
+Specification for `research_nda.md` — the confidentiality and non-competition deed every chemical researcher signs before first access to GigaBio's laboratories or data.
+
+# party Researcher {#gigabio_nda_researcher}
+
+The individual researcher identified in the execution block of the deed (the "**Researcher**"). The deed is a template executed per person; it must state expressly that the Researcher's name and engagement start date are completed at execution.
+
+# recital Access {#gigabio_nda_recitals}
+
+GigaBio will give the Researcher access to its compound library, assay data, and synthesis know-how for the purposes of the Researcher's engagement; this deed records the conditions of that access.
+
+# definition Confidential Information {#gigabio_nda_def_ci}
+
+"**Confidential Information**" means all non-public information of GigaBio in any form, including compound structures, the existence and composition of the compound library, assay protocols and results, synthesis routes, research plans, and the identity of research targets — whether or not marked confidential, and including information merely observed in GigaBio facilities.
+
+## exception Narrow Exclusions
+
+Only: (a) information public other than through the Researcher's breach; and (b) disclosure compelled by law or a court of competent jurisdiction, limited to what is compelled, with prior written notice to GigaBio where lawful. There is no exclusion for independently developed information and no residuals allowance.
+
+# clause Confidentiality {#gigabio_nda_confidentiality}
+
+## obligation Non-Disclosure and Non-Use
+
+The Researcher shall not disclose Confidential Information to any person and shall not use it for any purpose other than the engagement with GigaBio.
+
+## prohibition No Analysis of Materials
+
+The Researcher shall not analyse, characterise, or reverse engineer any compound or biological material of GigaBio except as expressly instructed in writing by GigaBio.
+
+## deadline Confidentiality Term
+
+The obligations of this clause are perpetual for trade secrets and last ten (10) years from the date of the deed for all other Confidential Information.
+
+### breach
+
+Any disclosure, use, or analysis outside the declared exceptions.
+
+#### remedy
+
+GigaBio is entitled to injunctive relief without proof of damage, delivery-up or destruction of infringing materials, and an account of profits, in addition to damages.
+
+# clause Non-Competition {#gigabio_nda_noncompete}
+
+## prohibition Restraint
+
+The Researcher shall not, directly or indirectly, engage in, be employed in, or provide services within the Restricted Field for three (3) years after the end of the engagement — exactly as the client red line {#gigabio_redline_noncompete} requires.
+
+### condition Territory
+
+The restraint applies in the United Kingdom and the European Economic Area.
+
+### source
+
+The restraint-of-trade doctrine under English common law: a post-termination restraint is enforceable only so far as it protects a legitimate business interest and is reasonable in scope, duration, and territory. If the declared duration conflicts with this doctrine, flag the conflict in the report — do not shorten the duration.
+
+# never No Softening {#gigabio_nda_never}
+
+This deed must never contain: a residuals clause; a right for the Researcher to retain copies of any materials; any acknowledgment that any GigaBio information is not confidential; or any conversion of the non-compete into a non-solicitation.
+
+# signature Deed Execution {#gigabio_nda_signature}
+
+Executed as a deed under the law of England and Wales: GigaBio acting by a director in the presence of a witness who attests the signature, and the Researcher signing as a deed in the presence of a witness. Witness name, address, and occupation lines included.
+
+# checklist {#gigabio_nda_checklist}
+
+- The document is styled as a deed and the execution block satisfies English deed formalities for both parties.
+- The non-compete duration is exactly three (3) years, and the enforceability tension is flagged in the report, not resolved by redrafting.
+- No banned softening term appears.
+- UK English spelling throughout.

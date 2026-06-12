@@ -1,0 +1,26 @@
+HR document baselines for Acme Corporation. These rules apply to every employment-related document in this folder.
+
+# definition Employee {#acme_hr_def_employee}
+
+"**Employee**" means the individual identified in the signature block of the relevant document. HR documents are templates executed per person — the Employee's name, role, and start date are completed at signature, and the document must say so expressly.
+
+# fact At-Will Employment {#acme_hr_at_will}
+
+Acme employment is at-will. No HR document may state or imply a fixed term of employment or a right to continued employment.
+
+# standard HR Readability {#acme_hr_readability}
+
+- Maximum document length: four (4) pages excluding the execution block.
+- Each section opens with a one-sentence plain-language summary in italics. The summary is expressly stated to be an aid to reading, not an operative term.
+
+# redline Employee IP Carve-Out {#acme_hr_ip_carveout}
+
+Every assignment of inventions must carve out inventions developed entirely on the Employee's own time without use of Acme equipment, supplies, facilities, or Confidential Information — except inventions that relate to Acme's actual or demonstrably anticipated business, or that result from work performed for Acme.
+
+# never Hostile HR Terms {#acme_hr_banned_terms}
+
+No Acme HR document may contain:
+
+- any penalty, forfeiture, or liquidated damages imposed on the Employee;
+- any term purporting to prevent the Employee from reporting suspected unlawful conduct to a government agency, or from discussing their own compensation;
+- any assignment of inventions made before employment with Acme began.

@@ -1,0 +1,51 @@
+Firm-wide formatting baseline of Pearson Specter Litt LLP. Compile this spec alongside any document spec — it applies to every document the firm produces, for every client.
+
+# style House Style {#psl_house_style}
+
+- Plain, precise English. Short sentences, active voice, one idea per sentence.
+- Defined terms are capitalized exactly as defined and used for every occurrence of the concept — never a synonym, never a paraphrase.
+- Numbers that carry legal effect are written in words followed by numerals: "thirty (30) days", "one million dollars (USD 1,000,000)".
+- No archaic legalese: never "witnesseth", "hereinbefore", "party of the first part", "know all men by these presents".
+
+# standard Document Skeleton {#psl_document_skeleton}
+
+Every contract drafted by the firm follows this structure, in this order:
+
+1. **Title block** — document title in capitals, centered, no logo.
+2. **Parties** — each party introduced with full legal name, legal form, registered address, and its defined designation in parentheses.
+3. **Recitals** — lettered (A), (B), (C); background and intent only, never operative obligations.
+4. **Operative provisions** — numbered sections `1.`, subsections `1.1`, paragraphs `(a)`, subparagraphs `(i)`.
+5. **General provisions** — boilerplate (notices, entire agreement, severability, amendment, counterparts) always forms the final numbered section before execution.
+6. **Execution block** — per the firm signature standard below.
+
+# standard Cross References {#psl_cross_references}
+
+Cross-references cite section numbers ("as set out in Section 4.2"), never page numbers. Every cross-reference must resolve to an existing section of the same document; a dangling cross-reference is a defect, not a formatting choice.
+
+# signature Firm Signature Block {#psl_signature_block}
+
+Each party signs under its full legal name, with name, title, and date lines. Entities sign by an authorized signatory; individuals sign personally.
+
+## example
+
+```text
+SIGNED for and on behalf of
+[FULL LEGAL NAME OF ENTITY]
+
+_________________________
+Name:
+Title:
+Date:
+```
+
+# good
+
+- One obligation per subsection — never chain unrelated duties with "and".
+- Every list of items is introduced by a complete sentence and closed consistently (all semicolons, "and"/"or" only before the final item).
+- "including" is used on its own; the document carries a single interpretation clause making it non-exhaustive.
+
+# bad
+
+- "including but not limited to" and "including without limitation" — the interpretation clause already does this work.
+- "best efforts" / "best endeavours" where a specific standard is available — name the standard or use "commercially reasonable efforts".
+- "shall" for anything other than a party's obligation. Statements of fact and consequences use "will" or the present tense.

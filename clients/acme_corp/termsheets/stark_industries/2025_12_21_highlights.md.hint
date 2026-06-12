@@ -1,0 +1,34 @@
+Specification for `2025_12_21_highlights.md` — the founder-facing highlights memo on the Stark Industries term sheet dated December 21, 2025.
+
+# read Received Term Sheet {#stark_ts_source}
+
+Open and read `clients/acme_corp/termsheets/stark_industries/2025_12_21_version.md` in full before drafting. Every figure, percentage, and quoted term in the memo must come from that document — nothing from memory of "market" deals.
+
+# standard Memo Structure {#stark_memo_structure}
+
+The memo has exactly these sections, in this order:
+
+1. **Deal snapshot** — one table: amount, valuation, effective dilution, option pool treatment.
+2. **Red-line check** — every term classified per the intake procedure {#acme_ts_intake}, violations first.
+3. **Negotiation asks** — for each violation or negotiate-class term, the specific change to request, honoring declared fallbacks only.
+4. **What we'd sign today** — the terms that conform and need no discussion.
+5. **Open gaps** — anything the term sheet leaves silent that the founders must decide.
+
+# argument Pool Shuffle {#stark_pool_shuffle}
+
+The memo must show the founders the real price of the option pool term: the pool increase comes out of the pre-money valuation, so the effective pre-money is lower than the headline number. Develop this from the term sheet's own figures — state the calculation, not just the conclusion.
+
+# risk Expiry Pressure {#stark_expiry_risk}
+
+The term sheet carries a countersignature deadline and a binding no-shop. The memo must state both dates' consequences plainly, so the founders do not discover time pressure after it has run.
+
+# never No Investor-Facing Language {#stark_memo_never}
+
+The memo is internal. No sentence may be addressed to Stark, quote a counter-offer price, or be phrased so it could be forwarded to the investor as a position of the Company.
+
+# checklist {#stark_memo_checklist}
+
+- Every number in the memo traces to the received term sheet; the pool-adjusted valuation is derived, and the derivation is shown.
+- Every red line in {#acme_ts_redlines} is explicitly checked, each with a verdict.
+- Each violation is paired with a negotiation ask that stays within declared fallbacks.
+- The no-shop and expiry dates appear in the memo with their consequences.

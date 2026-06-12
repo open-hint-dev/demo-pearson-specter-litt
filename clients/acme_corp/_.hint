@@ -1,0 +1,39 @@
+Client sandbox of Acme Corporation. Everything in this folder is drafted for Acme and only for Acme — see the firm's cross-client leakage prohibition.
+
+# matter Acme General Corporate Engagement {#acme_matter}
+
+Pearson Specter Litt LLP acts as outside general counsel to Acme Corporation, a venture-backed enterprise software company. The engagement covers day-to-day HR documentation and venture financing support. Acme's standing instruction: keep documents short, founder-readable, and aggressively protective of employee goodwill — Acme competes for engineers and refuses terms that would scare candidates away.
+
+# party Acme {#acme_party}
+
+Acme Corporation, a corporation incorporated under the laws of the State of Delaware, with its registered office at 2400 Coyote Canyon Road, Wilmington, Delaware 19801, USA ("**Acme**" or the "**Company**").
+
+# jurisdiction Delaware {#acme_law}
+
+All Acme documents are governed by the laws of the State of Delaware, without regard to its conflict-of-laws rules. Forum: the state and federal courts sitting in Wilmington, Delaware, and each party waives objection to that venue. Flag any requested provision that Delaware law would not enforce instead of drafting it.
+
+# fact Acme Profile {#acme_facts}
+
+- Acme employs approximately one hundred forty (140) people; engineering staff work remotely across several US states, including California.
+- Acme closed its Series A in March 2024 and is currently negotiating a Series B.
+- Acme's fiscal year is the calendar year.
+
+# definition Affiliate {#acme_def_affiliate}
+
+"**Affiliate**" means, with respect to a party, any entity that directly or indirectly controls, is controlled by, or is under common control with that party, where "control" means ownership of more than fifty percent (50%) of the voting securities.
+
+# redline No Long Restraints {#acme_redline_restraints}
+
+Acme never imposes a post-termination non-compete longer than twelve (12) months on any employee or contractor, and never imposes any non-compete at all on personnel working primarily from California.
+
+## fallback Trade Secret Protection
+
+If a counterparty insists on longer protection, extend only the confidentiality term for trade secrets — never the duration or scope of any non-compete.
+
+# redline No Uncapped Liability {#acme_redline_liability}
+
+Acme never accepts uncapped liability. Acme's aggregate liability under any agreement is capped, and the cap never exceeds the amounts paid or payable by the counterparty under that agreement in the twelve (12) months preceding the claim.
+
+# style Acme Voice {#acme_style}
+
+US English. Founder-readable: a non-lawyer must be able to understand every obligation on first read. Prefer the shortest enforceable formulation over the most exhaustive one.
