@@ -1,0 +1,4 @@
+name: demo-pearson-specter-litt
+description: Document repository of **Pearson Specter Litt LLP**, the premier corporate law firm in New York City
+books:
+    - npm://@openhint/hintbook-lawyer

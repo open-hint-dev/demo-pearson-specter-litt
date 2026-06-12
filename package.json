@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@openhint/hintbook-lawyer": "^1.0.1"
+  }
+}
